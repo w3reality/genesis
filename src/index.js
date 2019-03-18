@@ -12,7 +12,7 @@ class App extends SDK.App {
     }
 
     // override
-    constructor(data, name="") {
+    constructor(data, name="foo") {
         super(data, name);
         this.set_block(0, 0, 6, BLOCK.MODEL_TEST);
         this.say('welcome');
