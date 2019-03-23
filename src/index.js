@@ -5,10 +5,10 @@ const SDK = window.requirejs('w3reality-sdk');
 class App extends SDK.App {
     // override
     static createWorld() {
-        const [world, chunkSize] = super.createWorld();
+        const world = super.createWorld();
         world.createFlatWorld(6, BLOCK.CONCRETE);
         world.setSpawnPose([4.0, 1.5, 8, -Math.PI/16, -Math.PI/2, 0]);
-        return [world, chunkSize];
+        return world;
     }
 
     // override
