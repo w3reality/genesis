@@ -7,16 +7,13 @@ class App extends SDK.App {
     static createWorld() {
         const world = new World(8, 8, 8);
         world.createFlatWorld(4, BLOCK.CONCRETE);
-        world.setSpawnPose([4.0, 1.5, 8, -Math.PI/16, -Math.PI/2, 0]);
-        world.setChunkSize(4);
+        world.setSpawnPose([4.0, 1.5, 8, 0, -Math.PI/2, 0]);
         return world;
     }
 
     // override
     constructor(data, name="foo") {
         super(data, name);
-        this.set_block(0, 0, 4, BLOCK.MODEL_TEST);
-        this.say('welcome');
     }
 
     // override
