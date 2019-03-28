@@ -1,13 +1,12 @@
 
 const SDK = window.requirejs('w3reality-sdk');
-// console.log('SDK:', SDK);
 
 class App extends SDK.App {
     // override
     static createWorld() {
         const world = new World(8, 8, 8);
         world.createFlatWorld(4, BLOCK.CONCRETE);
-        world.setSpawnPose([4.0, 1.5, 8, 0, -Math.PI/2, 0]);
+        world.setSpawnPose([4, 1.5, 8, 0, -Math.PI/2, 0]);
         return world;
     }
 
